@@ -21,8 +21,8 @@ CategoryFields Table
 -CategoryID	:UNID (FK) (can't be empty)
 -DataTypeID	:UNID (FK) (can't be empty)
 -Name		:varchar(50) (default "New Field")
--Order		:int(2) (default 0)
--Default	:varchar (50)
+-Sort		:tinyint (default 0)
+-Original	:varchar (50)
 
 Item Table
 -ID		:UNID (PK) (sequenced) (unique)

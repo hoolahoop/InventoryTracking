@@ -28,8 +28,8 @@ CREATE TABLE CategoryFields (
 	CategoryID UNIQUEIDENTIFIER NOT NULL,
 	DataTypeID UNIQUEIDENTIFIER NOT NULL,
 	Name varchar(50) DEFAULT 'New Field',
-	Order int(2) DEFAULT 0,
-	Default varchar(50),
+	Sort tinyint DEFAULT 0,
+	Original varchar(50),
 	FOREIGN KEY (CategoryID) REFERENCES Categories(ID),
 	FOREIGN KEY (DataTypeID) REFERENCES DataTypes(ID)
 );
